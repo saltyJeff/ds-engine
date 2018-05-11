@@ -1,0 +1,42 @@
+{
+	"defaultSeverity": "warning",
+	"rules": {
+		"indent": [true, "tabs", 4],
+		"quotemark": [
+			true,
+			"single"
+		],
+		"promise-function-async": true,
+		"curly": true,
+		"no-string-throw": true,
+		"triple-equals": [
+			true
+		],
+		"use-isnan": true,
+		"trailing-comma": [
+			true,
+			{"singleline": "never", 
+			"multiline": {
+				"arrays": "always",
+				"functions": "never",
+				"objects": "always"
+			}}
+		],
+		"arrow-parens": true,
+		"semicolon": [
+			true
+		],
+		"whitespace": [
+			true,
+			"check-decl",
+			"check-module",
+			"check-type",
+			"check-typecast",
+			"check-preblock"
+		],
+		"one-line": [
+			true,
+			"check-open-brace"
+		]
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+	  "jsx": "react",
+    "experimentalDecorators": true,
+    "outDir": "./ts-out",
+    "sourceMap": true,
+    "lib": [
+      "dom",
+      "es2015",
+    ]
+  }
+}

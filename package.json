@@ -1,0 +1,29 @@
+{
+  "name": "ds-engine",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel -d dist index.html",
+    "build": "parcel build -d docs index.html"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "js-yaml": "^3.11.0",
+    "mobx": "^4.2.1",
+    "mobx-react": "^5.1.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^3.11.1",
+    "@types/react": "^16.3.13",
+    "@types/react-dom": "^16.0.5",
+    "@types/react-sidebar": "^2.3.0",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.8.1",
+    "typescript": "^2.8.3"
+  }
+}

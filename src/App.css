@@ -1,0 +1,155 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	color: white;
+}
+/*serif heading sans-serif not-heading*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Archivo Narrow', sans-serif;
+	margin: 0px;
+}
+p {
+	font-family: 'Merriweather', serif;
+	white-space: pre-wrap;
+	margin: 0px;
+	text-align: left;
+}
+.App {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.GameSelecter {
+	color: black;
+}
+.GamePlayer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.Scene {
+	width: 100%;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	max-width: 960px;
+}
+.sceneTitle {
+	text-align: center;
+	font-size: 30pt;
+}
+.viewPort {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	text-align: center;
+	justify-content: center;	
+}
+.textPort {
+	padding: 10px 10px 5px 10px;
+	background-color: #C984E8;
+    box-shadow: 0 0 5px 10px #C984E8;
+	border-radius: 40px;
+	z-index: 10;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 22pt;
+}
+.CharTxt {
+	min-height: 170px;
+	max-height: 250px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.CharTxt > p {
+	font-size: 14pt;
+	flex: 1;
+	overflow: auto;
+}
+.Character {
+	color: white;
+}
+.portrait {
+	height: 100%;
+	max-height: 260px;
+	margin: 10px;
+	width: auto;
+	display: block;
+}
+.Options {
+	text-align: center;
+	min-height: 170px;
+	max-height: 250px;
+	overflow: auto;
+}
+.continueWrapper {
+	text-align: center;
+}
+.menuBar {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 100%;
+}
+.sidenav {
+    height: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow: hidden;
+    transition: 0.5s;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: start;
+	flex-wrap: wrap;
+}
+
+.sidenav p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+	transition: 0.3s;
+	white-space: nowrap;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+	margin-left: 50px;
+	color: white;
+}
+.menuOpened {
+	height: 200px;
+}
+.menuClosed {
+	height: 0px;
+	flex-wrap: nowrap;
+}
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+	.CharTxt {
+		min-height: 150px;
+	}
+	.CharTxt > p {
+		font-size: 12pt;
+	}
+}
