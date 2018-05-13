@@ -14,7 +14,9 @@ the magic of AJAX happen.
 *the default location for the built files is `docs` since github-pages won't let you put HTML anywhere else*
 
 ## Creating a game
-Coming soon
+Check out the wiki page! You can get started on the "Getting Started" page with the folder structure.
+
+Also check out `/docs/demo` for the sample project source
 
 ## Features
 This engine is meant for formulaic visual novels. A game designer would not have to touch a single line of code as
