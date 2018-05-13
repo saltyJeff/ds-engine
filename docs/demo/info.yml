@@ -1,0 +1,15 @@
+---
+engineVersion: 1.0.0
+name: Demo Project
+info: |-
+  Created by saltyJeff to show of ds-engine. 
+  
+  Art sourced from my friend and music sourced from the Internet Archives.
+
+  Special thanks to obvious-buttons for the CSS
+player:
+  Game Rating: "10/10 would play again"
+  _:
+    tutorial: true
+scenes:
+  - Intro

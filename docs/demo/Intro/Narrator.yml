@@ -1,0 +1,35 @@
+---
+name: Mr. Salty Jeff
+img: saltyJeff.gif
+states:
+  START:
+    dialog:
+      - Welcome to the DS-Engine demo page
+      - Hopefully this demo doesn't blow up in your face, but if it does feel free to send in a pull request
+    options:
+      - text: Wow seems cool! How do you know what to say?
+        goto: FUNNY
+  FUNNY:
+    dialog: |-
+      Funny you ask that, I was programmed as a finite state machine using YAML
+     
+      Cool huh?
+    img: saltyJeff_funny.gif
+    options:
+      - text: What's a finite state machine?
+        goto: COOL
+        eval: |-
+          window.open("http://www.letmegooglethat.com/?q=finite+state+machine", "_blank")
+      - text: Cool 
+        goto: COOL
+  COOL:
+    dialog: |-
+      Wasn't that so cool?
+
+      Well that's all I have to show you right now, come back later and I might have a full game set up with sound and everything.
+    options:
+      - text: See ya!
+        eval: window.close()
+      - text: How do I make one of these games?
+        eval: |-
+          location.href = "https://github.com/saltyJeff/ds-engine/wiki"

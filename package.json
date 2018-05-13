@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel -d dist index.html",
-    "build": "parcel build -d docs --public-url /ds-engine/ index.html"
+    "build": "parcel build -d docs --public-url ./ index.html"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",

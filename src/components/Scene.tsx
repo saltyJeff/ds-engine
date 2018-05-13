@@ -27,7 +27,7 @@ export default class Scene extends React.Component<{
 					<img className="portrait" src={this.props.scene.currentCharacter.img}/>
 				</div>
 				<audio src={this.props.scene.audio} autoPlay loop></audio>
-				<audio src={this.props.scene.currentCharacter.audio} autoPlay loop></audio>
+				<audio src={this.props.scene.currentCharacter.audio} autoPlay></audio>
 				<div className="textPort">
 				<u>{this.props.scene.currentCharacter.name}</u>
 				{

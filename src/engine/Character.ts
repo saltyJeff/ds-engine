@@ -29,7 +29,6 @@ export class Character {
 				}
 			}
 		}
-		this.audio = urljoin(this.scene.sceneUrl, this.audio);
 	}
 	runCharacter = () => {
 		if(!this.save.currentStateName) {
@@ -64,6 +63,15 @@ export class Character {
 				this.currentState.img = path.join(this.scene.sceneUrl, this.currentState.img);
 			}
 			this.img = this.currentState.img;
+		}
+		if(this.currentState.audio) {
+			if(!absoluteUrl(this.currentState.audio)) {
+				this.currentState.audio = path.join(this.scene.sceneUrl, this.currentState.audio);
+			}
+			this.audio = this.currentState.audio;
+		}
+		else {
+			this.audio = "";
 		}
 	}
 	takeOption = async (optIdx: number) => {
@@ -122,6 +130,7 @@ export class State {
 	@observable options: Option[];
 	@observable possibleOpts: Option[];
 	@observable img?: string;
+	@observable audio?: string;
 }
 export class Option {
 	@observable text: string;
